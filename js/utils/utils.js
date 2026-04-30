@@ -42,6 +42,8 @@
     fnBrowserDetect, waitForReadiness, isSafeUrl, unescapeHTML
 */
 
+console.log("utils loaded");
+
 /**
  * Changes the source of an image element from one SVG data URI to another.
  * @function
@@ -2101,4 +2103,8 @@ if (typeof module !== "undefined" && module.exports) {
         importMembers,
         escapeHTML
     };
+}
+
+if (typeof window !== "undefined") {
+    window._ = _;
 }
